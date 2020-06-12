@@ -1,0 +1,25 @@
+{
+  "name": "sports2000",
+  "version": "0.0.1",
+  "description": "A sports2000 node sample app for k8s",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bfv/node-sports2000.git"
+  },
+  "keywords": [
+    "nodejs",
+    "openedge",
+    "oe",
+    "sports2000"
+  ],
+  "author": "bfv",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bfv/node-sports2000/issues"
+  },
+  "homepage": "https://github.com/bfv/node-sports2000#readme"
+}
