@@ -4,6 +4,9 @@
   "description": "A sports2000 node sample app for k8s",
   "main": "index.js",
   "scripts": {
+    "build": "npm run compile && npm run copy-data",
+    "compile": "tsc",
+    "copy-data": "cp -r ./src/data ./dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,7 +19,7 @@
     "oe",
     "sports2000"
   ],
-  "author": "bfv",
+  "author": "bfv <dev@bfv.io>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bfv/node-sports2000/issues"
