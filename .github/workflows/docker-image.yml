@@ -14,5 +14,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Build nodejs project
+      run: npm run build
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag sports2000:$(date +%s)
