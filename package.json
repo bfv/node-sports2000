@@ -23,7 +23,9 @@
   },
   "homepage": "https://github.com/bfv/node-sports2000#readme",
   "dependencies": {
+    "@types/express": "^4.17.6",
     "@types/node": "^14.0.13",
+    "express": "^4.17.1",
     "typescript": "^3.9.5"
   }
 }
