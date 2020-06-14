@@ -29,7 +29,7 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag sports2000:$(date +%s)
     - name: Log into registry
-      run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login docker.pkg.github.com -u ${{ secrets.DOCKER_USER }} --password-stdin
+      run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login --username ${{ secrets.DOCKER_USER }} --password-stdin
     - name: Push image
       run: 
         IMAGE_ID=docker.pkg.github.com/${{ github.repository }}/$IMAGE_NAME
