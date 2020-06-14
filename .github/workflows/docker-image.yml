@@ -24,3 +24,5 @@ jobs:
       run: npm run build
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag sports2000:$(date +%s)
+    - name: Log into registry
+      run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login docker.pkg.github.com -u ${{ secret.DOCKER_USER }} --password-stdin
